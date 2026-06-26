@@ -110,3 +110,42 @@ font-size:20px;
 }
 
   }
+
+.categories{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+padding:40px 20px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+margin:15px 0;
+color:#0F4C81;
+}
+
+.card p{
+color:#555;
+line-height:1.6;
+}
+
+@media(min-width:900px){
+
+.categories{
+grid-template-columns:repeat(3,1fr);
+padding:70px;
+}
+
+}
