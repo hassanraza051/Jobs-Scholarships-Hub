@@ -1,13 +1,112 @@
 /* Jobs & Scholarships Hub */
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  font-family:Arial, sans-serif;
-  background:#f8fafc;
-  color:#1f2937;
+font-family:'Poppins',sans-serif;
+background:#f5f7fb;
+color:#222;
 }
+
+.header{
+position:sticky;
+top:0;
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 20px;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#0F4C81;
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.logo span{
+color:#22C55E;
+}
+
+nav{
+display:none;
+}
+
+.icons{
+display:flex;
+gap:18px;
+font-size:24px;
+cursor:pointer;
+}
+
+.hero{
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(135deg,#0F4C81,#22C55E);
+color:#fff;
+}
+
+.hero h1{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:17px;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.hero button{
+background:#fff;
+color:#0F4C81;
+border:none;
+padding:14px 28px;
+border-radius:40px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+}
+
+@media(min-width:900px){
+
+nav{
+display:flex;
+gap:28px;
+}
+
+nav a{
+text-decoration:none;
+font-weight:600;
+color:#333;
+}
+
+.icons{
+font-size:22px;
+}
+
+.hero{
+padding:120px 40px;
+}
+
+.hero h1{
+font-size:58px;
+}
+
+.hero p{
+width:650px;
+margin:auto;
+margin-bottom:30px;
+font-size:20px;
+}
+
+  }
