@@ -166,3 +166,17 @@ font-size:22px;
 font-weight:700;
 color:#0F4C81;
   }
+.menu-btn{
+background:none;
+border:none;
+font-size:28px;
+cursor:pointer;
+color:#0F4C81;
+display:block;
+}
+
+@media(min-width:900px){
+.menu-btn{
+display:none;
+}
+  }
