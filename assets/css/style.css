@@ -180,3 +180,61 @@ display:block;
 display:none;
 }
   }
+/* Premium Navigation */
+
+.navbar{
+display:none;
+align-items:center;
+gap:28px;
+}
+
+.navbar a{
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+color:#374151;
+transition:.3s;
+position:relative;
+}
+
+.navbar a:hover,
+.navbar a.active{
+color:#0F4C81;
+}
+
+.navbar a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:3px;
+background:#22C55E;
+border-radius:20px;
+transition:.3s;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after{
+width:100%;
+}
+
+.menu-btn{
+background:none;
+border:none;
+font-size:26px;
+color:#0F4C81;
+cursor:pointer;
+}
+
+@media(min-width:992px){
+
+.navbar{
+display:flex;
+}
+
+.menu-btn{
+display:none;
+}
+
+  }
