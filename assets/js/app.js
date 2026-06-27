@@ -19,3 +19,44 @@ menuBtn.addEventListener("click", () => {
         menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 });
+const latestPosts = document.getElementById("latestPosts");
+
+const opportunities = [
+
+{
+type:"Government",
+title:"FPSC Jobs 2026",
+description:"Latest Federal Public Service Commission vacancies."
+},
+
+{
+type:"Scholarship",
+title:"Chevening Scholarship",
+description:"Apply for a fully funded UK scholarship."
+},
+
+{
+type:"International",
+title:"Australia Work Visa",
+description:"Latest overseas work opportunities."
+}
+
+];
+
+opportunities.forEach(item=>{
+
+latestPosts.innerHTML += `
+<div class="latest-card">
+
+<span>${item.type}</span>
+
+<h3>${item.title}</h3>
+
+<p>${item.description}</p>
+
+<a href="#">Read More →</a>
+
+</div>
+`;
+
+});
