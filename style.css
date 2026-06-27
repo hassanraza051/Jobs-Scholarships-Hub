@@ -1,0 +1,22 @@
+/* Jobs & Scholarships Hub v1 */
+:root{
+ --primary:#1565c0;
+ --secondary:#00a86b;
+ --bg:#f5f8fc;
+ --text:#1f2937;
+ --white:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid #e5e7eb}
+.navbar{max-width:1200px;margin:auto;padding:16px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:700;color:var(--primary);text-decoration:none}
+.nav-links{display:flex;gap:20px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--text)}
+.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;
+background:linear-gradient(135deg,#1565c0,#42a5f5)}
+.hero h1{font-size:3rem;color:#fff}
+@media(max-width:768px){
+.nav-links{display:none}
+.hero h1{font-size:2rem}
+}
